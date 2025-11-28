@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vandz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Test</h1>
+    <div class="container">
+        <header>
+            <h1>Ask everything with<span class="wtf"> Vandz</span></h1>
+            <p class="subtitle">Dare to ask? Prepare for the truth.</p>
+        </header>
+
+        <main>
+            <div class="question-box">
+                <input type="text" id="questionInput" placeholder="Type your stupid question here..." autocomplete="off">
+            </div>
+
+            <div class="card-container">
+                <div class="card" id="resultCard">
+                    <div class="front">
+                        <div class="placeholder-content">
+                            <span class="icon">🔮</span>
+                            <p>Vandz is thinking...</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <h2 id="answerText">YES</h2>
+                        <div class="image-wrapper">
+                            <img id="resultImage" src="" alt="Oracle's Vision">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="askBtn" class="cta-button">SUMMON THE ANSWER</button>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://yesno.wtf/" target="_blank">yesno.wtf</a> & Stupidity</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
